@@ -25,7 +25,7 @@ isPoint7 = True
 
 def browseFolder(): #user selects test folder, gets test files and name/type of stave
     global folder_selected
-    folder_selected = filedialog.askdirectory(initialdir=r"c:\Users\maxwe\Desktop\\")
+    folder_selected = filedialog.askdirectory(initialdir=r"c:\Users\Admin\Desktop\ATLAS\Optical Test Results")
     if folder_selected:
         files = [os.path.join(folder_selected,file) for file in os.listdir(folder_selected)]
         global file0
